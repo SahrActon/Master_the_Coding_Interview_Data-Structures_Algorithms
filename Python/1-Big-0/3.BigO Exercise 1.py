@@ -6,7 +6,7 @@ def funChallenge(input):
     a = 10  # 0(1)
     a = 50 + 3  # 0(1)
 
-    for i in input:  # 0(1)
+    for i in input:  # 0(n)
         anotherFunction()  # 0(n)
         stranger = True  # 0(n)
         a = a + 1  # 0(n)
@@ -17,3 +17,6 @@ myInput = [1, 2, 3, 4, 5, 6]
 funChallenge(myInput)
 
 # The result should be # 0(n)
+
+# 3 + n + n + n + n
+# Big 0(3 + 4n)
