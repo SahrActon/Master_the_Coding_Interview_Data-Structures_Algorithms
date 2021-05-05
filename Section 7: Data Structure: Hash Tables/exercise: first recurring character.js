@@ -9,29 +9,51 @@
 // Given an array = [2,3,4,5]
 // it should return undefined 
 
+function findFirstRecurring_1(array1) {
+    // O(n^2) - because of the nested loop
+    let state = false;
 
-function findFirstRecurring(array1) {
-    let indexPointer = 0;
-    for (let i = 1; i <= array1.length; i++) {
-        let currentIndex = array1[indexPointer];
-        if (currentIndex === array1[i]) {
-            console.log("Found it", array1[i])
-            return array1[i];
-        } else {
-            indexPointer++;
-            currentIndex = array1[indexPointer];
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = i + 1; j < array1.length; j++) {
+            if (array1[i] === array1[j]) {
+                state = true;
+                console.log(state, array1[i])
+                return;
+            }
         }
     }
-
+    console.log("We didnt find any matching char")
+    return state;
 }
 
-let arrayX = [2, 7, 1, 2, 3, 5, 1, 2, 4];
-findFirstRecurring(arrayX);
-console.log("---");
+function findFirstRecurring_2(input) {
+    let map = {};
+    for (let i = 0; i < input.length; i++) {
+        if (map[input[i]] !== 0) {
+            console.log(input[i])
+            return input[i];
+        } else {
+            map[input[i]] = i;
+        }
+        console.log(map)
+    }
+    return undefined;
+}
 
+let arrayX = [2, 5, 1, 2, 3, 5, 1, 2, 4];
 let arrayY = [0, 1, 1, 2, 3, 5, 1, 2, 4];
-findFirstRecurring(arrayY);
-console.log("---");
-
 let arrayZ = [2, 3, 4, 5];
-findFirstRecurring(arrayZ);
+
+// findFirstRecurring_1(arrayX);
+// console.log("---");
+// findFirstRecurring_1(arrayY);
+// console.log("---");
+// findFirstRecurring_1(arrayZ);
+// console.log("v2\n\n");
+
+findFirstRecurring_2(arrayX);
+console.log("---");
+findFirstRecurring_2(arrayY);
+console.log("---");
+findFirstRecurring_2(arrayZ);
+console.log("---");
