@@ -39,6 +39,7 @@ class HashTable {
         return undefined;
     }
 
+
     // This is looping through the entire set
     getAllKeys() {
 
@@ -52,7 +53,7 @@ class HashTable {
             // if its not an empty memory cell
             if (this.data[i] && this.data[i].length) {
 
-                // but also loop through all the potential collision
+                // but also loop through all the potential collision e.g. [0:"sdfds" , [[2:"dfd",3: "dsf"]]]
                 if (this.data.length > 1) {
                     for (let j = 0; j < this.data[i].length; j++) {
                         keysArray.push(this.data[i][j][0])
