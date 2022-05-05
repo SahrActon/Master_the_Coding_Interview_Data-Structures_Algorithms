@@ -10,6 +10,10 @@
 3. Linked Lists [Todo]
 4. Stack and Queues [Todo]
 5. Trees [Todo]
+   - BST, 
+   - AVL Trees, 
+   - Red Black Trees, 
+   - Binary Heaps)
 6. Graphs [Todo]
 
 ### Algorithms -
