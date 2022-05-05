@@ -1,0 +1,26 @@
+Queues
+
+Lookup - 0(n)
+Pop -  0(1)
+Push - 0(1)
+Peek - 0(1)
+
+FIFO - (First in first out)
+
+Imagine people queuing to entry a theme park or club
+
+    =
+    =
+    =
+    =
+    =
+    =
+-----------
+
+When will we use this
+
+- when you want to see the last element that was inserted
+
+Examples
+- Browser navigation
+- Control undo and redo

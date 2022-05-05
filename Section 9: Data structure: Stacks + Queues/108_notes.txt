@@ -1,0 +1,8 @@
+Stacks and Queues
+- They are both linear data structures
+- Only one data element can be reached
+- These data structures are very similar
+
+Difference
+- The only difference between the two data structures is the way that items get removes
+

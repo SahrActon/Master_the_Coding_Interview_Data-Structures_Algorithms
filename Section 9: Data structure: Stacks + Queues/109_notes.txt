@@ -1,0 +1,28 @@
+Stacks
+
+- Stacks
+
+Lookup - 0(n)
+Pop -  0(1)
+Push - 0(1)
+Peek - 0(1)
+
+LIFO - (Last in first out)
+
+Imagine a stack of plates
+
+    =
+    =
+    =
+    =
+    =
+    =
+-----------
+
+When will we use this
+
+- when you want to see the last element that was inserted
+
+Examples
+- Browser navigation
+- Control undo and redo
