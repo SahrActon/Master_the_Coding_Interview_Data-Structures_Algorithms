@@ -5,7 +5,8 @@
 ## Overview -
 
 ### Data Structures -
-1. Arrays [Todo]
+1. Arrays 
+- []
 2. Hashtables (dictionary) [Todo]
 3. Linked Lists [Todo]
 4. Stack and Queues [Todo]
@@ -28,3 +29,6 @@
 
 - Course details - https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/18063259#overview
 - Other People's solution  - https://github.com/theja-m/Data-Structures-and-Algorithms** 
+
+- []
+- [x]
