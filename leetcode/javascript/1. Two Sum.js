@@ -39,14 +39,32 @@ let twoSum = function (nums, target) {
             if (nums[i] !== nums[j]) {
                 if ((nums[i] + nums[j]) === target) {
                     console.log("results " + i, j);
-                    return;
+                    return [i, j];
                 }
             }
         }
     }
-
 }
 
-twoSum([2, 7, 11, 15], 9)
-twoSum([3, 2, 4], 6)
-twoSum([3, 3], 6)
+let twoSum2 = function (arr1, target) {
+    // first number from array
+    let map = new Map();
+    for (let i = 0; i < arr1.length; i++) {
+        let num1 = arr1[i];
+        let num2 = target - num1; // this is the number that we are looking for
+
+        if (map.has(num2)) {
+            return [i, map.get(num2)];
+        }
+        map.set(num1, i);
+        console.log(map)
+
+
+    }
+}
+
+// twoSum([2, 7, 11, 15], 9)
+// twoSum([3, 2, 4], 6)
+// twoSum([3, 3], 6)
+
+console.log(twoSum2([1, 2, 3, 5, 7, 6], 10))

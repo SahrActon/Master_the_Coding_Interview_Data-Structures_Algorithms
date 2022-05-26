@@ -1,6 +1,6 @@
 // Create a function that reverse a string
 
-// "hi my name is is" should be
+// "hi my name is" should be
 // si eman ym ih
 
 function reverse(str) {
