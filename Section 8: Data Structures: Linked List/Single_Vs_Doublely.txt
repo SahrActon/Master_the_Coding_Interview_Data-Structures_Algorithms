@@ -1,0 +1,12 @@
+Single
+- Pros
+Fast insertion
+
+
+Double
+-probs
+good for searching backwords
+
+
+- cons
+Complex

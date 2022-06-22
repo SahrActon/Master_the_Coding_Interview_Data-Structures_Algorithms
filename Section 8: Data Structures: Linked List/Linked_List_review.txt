@@ -1,0 +1,11 @@
+Linked List
+
+Pros
+- fast insertion
+- fast deletion
+- ordered
+- fixed size
+
+cons
+- Slow looks up
+- More memory
